@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginScreenFragment">
+
+    <fragment
+        android:id="@+id/loginScreenFragment"
+        android:name="com.example.climatelocationapp.views.LoginScreenFragment"
+        android:label="LoginScreenFragment" >
+        <action
+            android:id="@+id/action_loginScreenFragment_to_climateLocationFragment"
+            app:destination="@id/climateLocationFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/climateLocationFragment"
+        android:name="com.example.climatelocationapp.views.ClimateLocationFragment"
+        android:label="ClimateLocationFragment" />
+</navigation>
